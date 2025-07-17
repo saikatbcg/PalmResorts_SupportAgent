@@ -36,8 +36,8 @@ JWT_EXPIRY_MINUTES = 10
 @app.route('/auth/token')
 def get_token():
     payload = {
-        "sub": "user-id-1234",  # Unique user ID
-        "name": "John Doe",
+        "sub": "user-id-2345",  # Unique user ID
+        "name": "Alex Doe",
         "email": "john.doe@example.com",
         "iss": JWT_ISSUER,
         "exp": datetime.datetime.utcnow() + datetime.timedelta(minutes=JWT_EXPIRY_MINUTES)
