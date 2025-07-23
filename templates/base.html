@@ -41,8 +41,11 @@
           host: "https://sbx2024-fp8e3vu.ue1.ccaiplatform.com",
           authenticate: getAuthToken
         });
-
+        //modified
         ccaasInstance.config({
+          startBehavior: {
+            mode: "MANUAL"
+          },
           customData: {
             env: {
               label: "Environment",
